@@ -1,0 +1,767 @@
+2023-05-19 19:14:19,557 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 305] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests], using SpringBootContextLoader
+2023-05-19 19:14:19,560 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java : 264] Could not detect default resource locations for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 19:14:19,560 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java : 83] Could not detect default configuration classes for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: XxlJobExecutorExampleBootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 19:14:19,613 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java : 239] Found @SpringBootConfiguration com.xxl.job.executor.XxlJobExecutorApplication for test class com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests
+2023-05-19 19:14:19,662 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 245] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 19:14:19,670 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 174] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cdc4c27, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e8ce150, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@604f2bd2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d3ac898, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b73be9f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@628c4ac0, org.springframework.test.context.event.EventPublishingTestExecutionListener@7b84fcf8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@366ac49b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ad59d92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56f0cc85, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@62e20a76]
+2023-05-19 19:14:19,865 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 55] Starting XxlJobExecutorExampleBootApplicationTests using Java 17.0.6 on MacBook-Air-3.local with PID 53560 (started by zhangxin in /Users/zhangxin/IdeaProjects/zx9588/alice/a-sundear/arc/arc-transfer/xxl-job-executor-samples/xxl-job-executor-sample-springboot)
+2023-05-19 19:14:19,866 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [SpringApplication.java : 631] No active profile set, falling back to 1 default profile: "default"
+2023-05-19 19:14:20,454 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-05-19 19:14:20,462 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-05-19 19:14:20,849 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
+2023-05-19 19:14:21,349 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19 19:14:21,398 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:hkJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3b33fff9[class com.xxl.job.executor.service.jobhandler.HikvisionXxlJob#hkJobHandler]
+2023-05-19 19:14:21,399 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3b9c9b8b[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]
+2023-05-19 19:14:21,399 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@7769d9b6[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#shardingJobHandler]
+2023-05-19 19:14:21,400 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@248d3a[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#commandJobHandler]
+2023-05-19 19:14:21,400 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3c71cf3e[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#httpJobHandler]
+2023-05-19 19:14:21,400 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@636e4bf8[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler2]
+2023-05-19 19:14:21,456 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:14:21,457 INFO [main] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-05-19 19:14:21,457 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:14:21,457 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {message-handler:mqttConfigure.handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-05-19 19:14:21,457 INFO [main] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-05-19 19:14:21,457 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean 'mqttConfigure.handler.serviceActivator'
+2023-05-19 19:14:21,457 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {message-handler:mqttConfigure.mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+2023-05-19 19:14:21,457 INFO [main] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttOutboundChannel' has 1 subscriber(s).
+2023-05-19 19:14:21,457 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean 'mqttConfigure.mqttOutbound.serviceActivator'
+2023-05-19 19:14:21,458 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:14:21,458 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:14:21,458 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:14:21,458 INFO [main] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] started bean 'mqttGateway'
+2023-05-19 19:14:21,484 ERROR [main] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 261] Error connecting or subscribing to [thing/115580863084822555/device/+/post]
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.doStart(MqttPahoMessageDrivenChannelAdapter.java:179)
+	at org.springframework.integration.endpoint.AbstractEndpoint.start(AbstractEndpoint.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2023-05-19 19:14:21,524 INFO [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 82] >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2023-05-19 19:14:21,531 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 143] Connection refused
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1312)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1245)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1131)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1060)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:14:21,532 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 54] >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.2.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused), for url : http://127.0.0.1:8700/xxl-job-admin/api/registry, content=null]
+2023-05-19 19:14:51,539 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 143] Connection refused
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1312)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1245)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1131)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1060)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:14:51,541 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 54] >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.2.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused), for url : http://127.0.0.1:8700/xxl-job-admin/api/registry, content=null]
+2023-05-19 19:14:56,498 ERROR [main] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 149] Exception while connecting and subscribing, retrying
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.doStart(MqttPahoMessageDrivenChannelAdapter.java:179)
+	at org.springframework.integration.endpoint.AbstractEndpoint.start(AbstractEndpoint.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2023-05-19 19:14:56,508 INFO [main] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 292] started bean 'inbound'; defined in: 'class path resource [com/xxl/job/executor/core/config/MqttConfigure.class]'; from source: 'com.xxl.job.executor.core.config.MqttConfigure.inbound()'
+2023-05-19 19:14:56,534 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 61] Started XxlJobExecutorExampleBootApplicationTests in 36.844 seconds (JVM running for 37.779)
+2023-05-19 19:14:56,536 INFO [SpringApplicationShutdownHook] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 292] stopped bean 'inbound'; defined in: 'class path resource [com/xxl/job/executor/core/config/MqttConfigure.class]'; from source: 'com.xxl.job.executor.core.config.MqttConfigure.inbound()'
+2023-05-19 19:14:56,536 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:14:56,537 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:14:56,537 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:14:56,537 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] stopped bean 'mqttGateway'
+2023-05-19 19:14:56,537 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {message-handler:mqttConfigure.handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean 'mqttConfigure.handler.serviceActivator'
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {message-handler:mqttConfigure.mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+2023-05-19 19:14:56,538 INFO [SpringApplicationShutdownHook] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttOutboundChannel' has 0 subscriber(s).
+2023-05-19 19:14:56,539 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean 'mqttConfigure.mqttOutbound.serviceActivator'
+2023-05-19 19:14:56,544 INFO [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 91] >>>>>>>>>>> xxl-job remoting server stop.
+2023-05-19 19:14:56,544 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 143] Connection refused
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1312)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1245)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1131)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1060)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registryRemove(AdminBizClient.java:47)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:84)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:14:56,544 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 90] >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.2.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused), for url : http://127.0.0.1:8700/xxl-job-admin/api/registryRemove, content=null]
+2023-05-19 19:14:56,544 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destroy.
+2023-05-19 19:14:56,544 INFO [SpringApplicationShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 117] >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-05-19 19:14:56,545 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destroy.
+2023-05-19 19:14:56,546 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 98] >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-05-19 19:14:56,546 INFO [Thread-3] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 128] >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-05-19 19:17:58,222 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 305] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests], using SpringBootContextLoader
+2023-05-19 19:17:58,225 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java : 264] Could not detect default resource locations for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 19:17:58,225 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java : 83] Could not detect default configuration classes for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: XxlJobExecutorExampleBootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 19:17:58,289 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java : 239] Found @SpringBootConfiguration com.xxl.job.executor.XxlJobExecutorApplication for test class com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests
+2023-05-19 19:17:58,337 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 245] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 19:17:58,349 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 174] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cdc4c27, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e8ce150, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@604f2bd2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d3ac898, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b73be9f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@628c4ac0, org.springframework.test.context.event.EventPublishingTestExecutionListener@7b84fcf8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@366ac49b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ad59d92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56f0cc85, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@62e20a76]
+2023-05-19 19:17:58,518 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 55] Starting XxlJobExecutorExampleBootApplicationTests using Java 17.0.6 on MacBook-Air-3.local with PID 53737 (started by zhangxin in /Users/zhangxin/IdeaProjects/zx9588/alice/a-sundear/arc/arc-transfer/xxl-job-executor-samples/xxl-job-executor-sample-springboot)
+2023-05-19 19:17:58,519 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [SpringApplication.java : 631] No active profile set, falling back to 1 default profile: "default"
+2023-05-19 19:17:59,039 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-05-19 19:17:59,047 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-05-19 19:17:59,440 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
+2023-05-19 19:17:59,926 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19 19:17:59,976 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:hkJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@225e09f0[class com.xxl.job.executor.service.jobhandler.HikvisionXxlJob#hkJobHandler]
+2023-05-19 19:17:59,977 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6e3b2dd3[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]
+2023-05-19 19:17:59,977 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@238ad211[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#shardingJobHandler]
+2023-05-19 19:17:59,977 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1c011855[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#commandJobHandler]
+2023-05-19 19:17:59,977 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6591f8ea[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#httpJobHandler]
+2023-05-19 19:17:59,977 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5273143e[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler2]
+2023-05-19 19:18:00,031 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:18:00,031 INFO [main] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-05-19 19:18:00,031 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:18:00,032 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {message-handler:mqttConfigure.handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-05-19 19:18:00,032 INFO [main] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttInputChannel' has 1 subscriber(s).
+2023-05-19 19:18:00,032 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean 'mqttConfigure.handler.serviceActivator'
+2023-05-19 19:18:00,032 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {message-handler:mqttConfigure.mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+2023-05-19 19:18:00,032 INFO [main] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttOutboundChannel' has 1 subscriber(s).
+2023-05-19 19:18:00,032 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean 'mqttConfigure.mqttOutbound.serviceActivator'
+2023-05-19 19:18:00,032 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:18:00,032 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:18:00,032 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:18:00,032 INFO [main] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] started bean 'mqttGateway'
+2023-05-19 19:18:00,056 ERROR [main] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 261] Error connecting or subscribing to [thing/115580863084822555/device/+/post]
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.doStart(MqttPahoMessageDrivenChannelAdapter.java:179)
+	at org.springframework.integration.endpoint.AbstractEndpoint.start(AbstractEndpoint.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2023-05-19 19:18:00,094 ERROR [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 93] >>>>>>>>>>> xxl-job remoting server error.
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:18:26,323 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 305] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests], using SpringBootContextLoader
+2023-05-19 19:18:26,327 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java : 264] Could not detect default resource locations for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 19:18:26,327 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java : 83] Could not detect default configuration classes for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: XxlJobExecutorExampleBootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 19:18:26,386 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java : 239] Found @SpringBootConfiguration com.xxl.job.executor.XxlJobExecutorApplication for test class com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests
+2023-05-19 19:18:26,430 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 245] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 19:18:26,441 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 174] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@55dfebeb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e35bc3d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1cdc4c27, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77b14724, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5d9b7a8a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e8ce150, org.springframework.test.context.transaction.TransactionalTestExecutionListener@604f2bd2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d3ac898, org.springframework.test.context.event.EventPublishingTestExecutionListener@1b73be9f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@628c4ac0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7b84fcf8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@366ac49b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6ad59d92]
+2023-05-19 19:18:26,639 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 55] Starting XxlJobExecutorExampleBootApplicationTests using Java 17.0.6 on MacBook-Air-3.local with PID 53752 (started by zhangxin in /Users/zhangxin/IdeaProjects/zx9588/alice/a-sundear/arc/arc-transfer/xxl-job-executor-samples/xxl-job-executor-sample-springboot)
+2023-05-19 19:18:26,639 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [SpringApplication.java : 631] No active profile set, falling back to 1 default profile: "default"
+2023-05-19 19:18:27,114 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-05-19 19:18:27,121 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-05-19 19:18:27,454 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
+2023-05-19 19:18:27,930 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19 19:18:27,986 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:hkJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@18bb1b88[class com.xxl.job.executor.service.jobhandler.HikvisionXxlJob#hkJobHandler]
+2023-05-19 19:18:27,987 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@139089a4[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]
+2023-05-19 19:18:27,987 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6a6e9289[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#shardingJobHandler]
+2023-05-19 19:18:27,987 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@ff4b223[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#commandJobHandler]
+2023-05-19 19:18:27,987 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@61554b6b[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#httpJobHandler]
+2023-05-19 19:18:27,987 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@761f234c[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler2]
+2023-05-19 19:18:28,030 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:18:28,030 INFO [main] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-05-19 19:18:28,031 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:18:28,031 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:18:28,031 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:18:28,031 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:18:28,031 INFO [main] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] started bean 'mqttGateway'
+2023-05-19 19:18:28,039 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 61] Started XxlJobExecutorExampleBootApplicationTests in 1.579 seconds (JVM running for 2.145)
+2023-05-19 19:18:28,104 ERROR [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 93] >>>>>>>>>>> xxl-job remoting server error.
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:18:28,283 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:18:28,283 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:18:28,283 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:18:28,283 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] stopped bean 'mqttGateway'
+2023-05-19 19:18:28,283 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:18:28,283 INFO [SpringApplicationShutdownHook] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-05-19 19:18:28,284 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:18:28,286 INFO [SpringApplicationShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 117] >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-05-19 19:18:28,287 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destroy.
+2023-05-19 19:18:28,287 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 98] >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-05-19 19:18:28,287 INFO [Thread-3] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 128] >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-05-19 19:18:35,067 ERROR [main] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 149] Exception while connecting and subscribing, retrying
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.doStart(MqttPahoMessageDrivenChannelAdapter.java:179)
+	at org.springframework.integration.endpoint.AbstractEndpoint.start(AbstractEndpoint.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2023-05-19 19:18:35,072 INFO [main] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 292] started bean 'inbound'; defined in: 'class path resource [com/xxl/job/executor/core/config/MqttConfigure.class]'; from source: 'com.xxl.job.executor.core.config.MqttConfigure.inbound()'
+2023-05-19 19:18:35,082 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 61] Started XxlJobExecutorExampleBootApplicationTests in 36.71 seconds (JVM running for 37.336)
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter [LogAccessor.java : 292] stopped bean 'inbound'; defined in: 'class path resource [com/xxl/job/executor/core/config/MqttConfigure.class]'; from source: 'com.xxl.job.executor.core.config.MqttConfigure.inbound()'
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] stopped bean 'mqttGateway'
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:18:35,322 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {message-handler:mqttConfigure.handler.serviceActivator} as a subscriber to the 'mqttInputChannel' channel
+2023-05-19 19:18:35,323 INFO [SpringApplicationShutdownHook] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttInputChannel' has 0 subscriber(s).
+2023-05-19 19:18:35,323 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean 'mqttConfigure.handler.serviceActivator'
+2023-05-19 19:18:35,323 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {message-handler:mqttConfigure.mqttOutbound.serviceActivator} as a subscriber to the 'mqttOutboundChannel' channel
+2023-05-19 19:18:35,323 INFO [SpringApplicationShutdownHook] o.s.i.channel.DirectChannel [LogAccessor.java : 174] Channel 'application.mqttOutboundChannel' has 0 subscriber(s).
+2023-05-19 19:18:35,323 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean 'mqttConfigure.mqttOutbound.serviceActivator'
+2023-05-19 19:18:35,325 INFO [SpringApplicationShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 117] >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-05-19 19:18:35,325 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destroy.
+2023-05-19 19:18:35,325 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 98] >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-05-19 19:18:35,325 INFO [Thread-3] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 128] >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-05-19 19:18:42,650 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 305] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests], using SpringBootContextLoader
+2023-05-19 19:18:42,654 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java : 264] Could not detect default resource locations for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 19:18:42,655 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java : 83] Could not detect default configuration classes for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: XxlJobExecutorExampleBootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 19:18:42,712 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java : 239] Found @SpringBootConfiguration com.xxl.job.executor.XxlJobExecutorApplication for test class com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests
+2023-05-19 19:18:42,758 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 245] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 19:18:42,768 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 174] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cdc4c27, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e8ce150, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@604f2bd2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d3ac898, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b73be9f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@628c4ac0, org.springframework.test.context.event.EventPublishingTestExecutionListener@7b84fcf8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@366ac49b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ad59d92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56f0cc85, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@62e20a76]
+2023-05-19 19:18:42,973 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 55] Starting XxlJobExecutorExampleBootApplicationTests using Java 17.0.6 on MacBook-Air-3.local with PID 53762 (started by zhangxin in /Users/zhangxin/IdeaProjects/zx9588/alice/a-sundear/arc/arc-transfer/xxl-job-executor-samples/xxl-job-executor-sample-springboot)
+2023-05-19 19:18:42,973 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [SpringApplication.java : 631] No active profile set, falling back to 1 default profile: "default"
+2023-05-19 19:18:43,464 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-05-19 19:18:43,471 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-05-19 19:18:43,819 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
+2023-05-19 19:18:44,296 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19 19:18:44,344 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:hkJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6a6e9289[class com.xxl.job.executor.service.jobhandler.HikvisionXxlJob#hkJobHandler]
+2023-05-19 19:18:44,345 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@687b0ddc[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]
+2023-05-19 19:18:44,345 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@42b4df5a[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#shardingJobHandler]
+2023-05-19 19:18:44,345 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@9f1ca74[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#commandJobHandler]
+2023-05-19 19:18:44,345 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@67b8d45[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#httpJobHandler]
+2023-05-19 19:18:44,345 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@365e65bb[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler2]
+2023-05-19 19:18:44,391 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:18:44,391 INFO [main] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-05-19 19:18:44,391 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:18:44,391 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:18:44,392 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:18:44,392 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:18:44,392 INFO [main] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] started bean 'mqttGateway'
+2023-05-19 19:18:44,401 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 61] Started XxlJobExecutorExampleBootApplicationTests in 1.608 seconds (JVM running for 2.177)
+2023-05-19 19:18:44,467 ERROR [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 93] >>>>>>>>>>> xxl-job remoting server error.
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] stopped bean 'mqttGateway'
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-05-19 19:18:44,641 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:18:44,643 INFO [SpringApplicationShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 117] >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-05-19 19:18:44,644 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destroy.
+2023-05-19 19:18:44,644 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 98] >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-05-19 19:18:44,644 INFO [Thread-3] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 128] >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-05-19 19:19:38,450 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 305] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests], using SpringBootContextLoader
+2023-05-19 19:19:38,453 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java : 264] Could not detect default resource locations for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-19 19:19:38,453 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java : 83] Could not detect default configuration classes for test class [com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests]: XxlJobExecutorExampleBootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-19 19:19:38,513 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java : 239] Found @SpringBootConfiguration com.xxl.job.executor.XxlJobExecutorApplication for test class com.xxl.job.executor.test.XxlJobExecutorExampleBootApplicationTests
+2023-05-19 19:19:38,562 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 245] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-19 19:19:38,572 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java : 174] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cdc4c27, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e8ce150, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@604f2bd2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d3ac898, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1b73be9f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@628c4ac0, org.springframework.test.context.event.EventPublishingTestExecutionListener@7b84fcf8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@366ac49b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ad59d92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56f0cc85, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@62e20a76]
+2023-05-19 19:19:38,755 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 55] Starting XxlJobExecutorExampleBootApplicationTests using Java 17.0.6 on MacBook-Air-3.local with PID 53789 (started by zhangxin in /Users/zhangxin/IdeaProjects/zx9588/alice/a-sundear/arc/arc-transfer/xxl-job-executor-samples/xxl-job-executor-sample-springboot)
+2023-05-19 19:19:38,756 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [SpringApplication.java : 631] No active profile set, falling back to 1 default profile: "default"
+2023-05-19 19:19:39,276 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-05-19 19:19:39,283 INFO [main] o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [LogAccessor.java : 292] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-05-19 19:19:39,633 INFO [main] c.x.j.e.core.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
+2023-05-19 19:19:40,116 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19 19:19:40,162 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:hkJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@ff4b223[class com.xxl.job.executor.service.jobhandler.HikvisionXxlJob#hkJobHandler]
+2023-05-19 19:19:40,163 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@42b4df5a[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]
+2023-05-19 19:19:40,163 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@9f1ca74[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#shardingJobHandler]
+2023-05-19 19:19:40,163 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@67b8d45[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#commandJobHandler]
+2023-05-19 19:19:40,163 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@365e65bb[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#httpJobHandler]
+2023-05-19 19:19:40,163 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 183] >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@52f43225[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler2]
+2023-05-19 19:19:40,203 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:19:40,203 INFO [main] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 1 subscriber(s).
+2023-05-19 19:19:40,204 INFO [main] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] started bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:19:40,204 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:19:40,204 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:19:40,204 INFO [main] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] started bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:19:40,204 INFO [main] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] started bean 'mqttGateway'
+2023-05-19 19:19:40,213 INFO [main] c.x.j.e.t.XxlJobExecutorExampleBootApplicationTests [StartupInfoLogger.java : 61] Started XxlJobExecutorExampleBootApplicationTests in 1.617 seconds (JVM running for 2.199)
+2023-05-19 19:19:40,292 INFO [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 82] >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2023-05-19 19:19:40,300 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 143] Connection refused
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1312)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1245)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1131)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1060)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:19:40,301 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 54] >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.2.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused), for url : http://127.0.0.1:8700/xxl-job-admin/api/registry, content=null]
+2023-05-19 19:19:40,472 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String)'
+2023-05-19 19:19:40,472 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, String)'
+2023-05-19 19:19:40,472 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean$MethodInvocationGateway [LogAccessor.java : 292] stopped bean 'mqttGateway#sendToMqtt(String, int, String)'
+2023-05-19 19:19:40,472 INFO [SpringApplicationShutdownHook] o.s.i.g.GatewayProxyFactoryBean [LogAccessor.java : 292] stopped bean 'mqttGateway'
+2023-05-19 19:19:40,472 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 174] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-05-19 19:19:40,472 INFO [SpringApplicationShutdownHook] o.s.i.c.PublishSubscribeChannel [LogAccessor.java : 174] Channel 'application.errorChannel' has 0 subscriber(s).
+2023-05-19 19:19:40,473 INFO [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer [LogAccessor.java : 292] stopped bean '_org.springframework.integration.errorLogger'
+2023-05-19 19:19:40,474 INFO [Thread-4] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 91] >>>>>>>>>>> xxl-job remoting server stop.
+2023-05-19 19:19:40,475 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 143] Connection refused
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1312)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1245)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1131)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1060)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registryRemove(AdminBizClient.java:47)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:84)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-19 19:19:40,475 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 90] >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.2.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-job remoting error(Connection refused), for url : http://127.0.0.1:8700/xxl-job-admin/api/registryRemove, content=null]
+2023-05-19 19:19:40,475 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destroy.
+2023-05-19 19:19:40,475 INFO [SpringApplicationShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 117] >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-05-19 19:19:40,475 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destroy.
+2023-05-19 19:19:40,476 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 98] >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-05-19 19:19:40,476 INFO [Thread-3] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 128] >>>>>>>>>>> xxl-job, executor retry callback thread destroy.

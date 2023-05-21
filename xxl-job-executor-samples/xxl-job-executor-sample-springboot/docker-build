@@ -1,1 +1,0 @@
-docker build -t arc-transfer/xxl-job-executor-sample-springboot:2.4.1-SNAPSHOT .
